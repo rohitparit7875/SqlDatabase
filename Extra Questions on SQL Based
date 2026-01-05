@@ -1,0 +1,47 @@
+1️⃣7️⃣ What is a Subquery?
+
+👉 Query inside another query.
+
+1️⃣8️⃣ What is a View?
+
+👉 Virtual table based on SELECT query.
+
+1️⃣9️⃣ What is Stored Procedure?
+
+👉 Precompiled SQL statements stored in DB.
+
+2️⃣0️⃣ What is Trigger?
+
+👉 Automatically executes on INSERT / UPDATE / DELETE.
+
+⭐ MOST ASKED CODING QUESTIONS
+🔹 Find 2nd highest salary
+SELECT MAX(salary)
+FROM emp
+WHERE salary < (SELECT MAX(salary) FROM emp);
+
+🔹 Find duplicate records
+SELECT name, COUNT(*)
+FROM emp
+GROUP BY name
+HAVING COUNT(*) > 1;
+
+🔹 Delete duplicate rows
+DELETE FROM emp
+WHERE id NOT IN (
+    SELECT MIN(id)
+    FROM emp
+    GROUP BY name
+);
+
+🎯 QUICK HR + TECH COMBO QUESTIONS
+
+Difference between OLTP and OLAP
+
+What happens if index is not used?
+
+How to optimize slow SQL query?
+
+Explain execution plan
+
+Clustered vs Non-Clustered Index
