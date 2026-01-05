@@ -1,0 +1,84 @@
+4. Constraints (VERY IMPORTANT)
+PRIMARY KEY
+FOREIGN KEY
+UNIQUE
+NOT NULL
+CHECK
+DEFAULT
+
+
+Example:
+
+CREATE TABLE emp (
+    id INT PRIMARY KEY,
+    email VARCHAR(50) UNIQUE,
+    age INT CHECK (age >= 18)
+);
+
+🔹 5. Aggregate Functions
+SELECT COUNT(*) FROM table_name;
+SELECT SUM(age) FROM table_name;
+SELECT AVG(age) FROM table_name;
+SELECT MIN(age) FROM table_name;
+SELECT MAX(age) FROM table_name;
+
+🔹 6. GROUP BY & HAVING (EXAM FAVORITE ⭐)
+SELECT age, COUNT(*)
+FROM table_name
+GROUP BY age;
+
+SELECT age, COUNT(*)
+FROM table_name
+GROUP BY age
+HAVING COUNT(*) > 1;
+
+🔹 7. Joins (VERY VERY IMPORTANT ⭐⭐⭐)
+SELECT *
+FROM emp
+INNER JOIN dept
+ON emp.dept_id = dept.id;
+
+
+Types:
+
+INNER JOIN
+
+LEFT JOIN
+
+RIGHT JOIN
+
+FULL JOIN
+
+🔹 8. Subquery
+SELECT name
+FROM emp
+WHERE age > (SELECT AVG(age) FROM emp);
+
+🔹 9. Keys & Index
+CREATE INDEX idx_name ON table_name(name);
+DROP INDEX idx_name;
+
+🔹 10. TCL (Transaction Control Language)
+COMMIT;
+ROLLBACK;
+SAVEPOINT sp1;
+
+🔹 11. View
+CREATE VIEW emp_view AS
+SELECT name, age FROM emp;
+
+DROP VIEW emp_view;
+
+🔹 12. Interview / MCQ MUST-KNOW
+
+DELETE vs TRUNCATE
+
+WHERE vs HAVING
+
+PRIMARY KEY vs UNIQUE
+
+JOIN vs SUBQUERY
+
+INDEX advantages
+
+ACID properties
