@@ -1,0 +1,99 @@
+1️⃣ What is SQL?
+
+👉 SQL (Structured Query Language) is used to store, retrieve, update, and manage data in relational databases.
+
+2️⃣ Difference between DELETE, TRUNCATE, and DROP?
+Command	Deletes Data	Structure	Rollback
+DELETE	Yes	No	✅ Yes
+TRUNCATE	Yes	No	❌ No
+DROP	Yes	Yes	❌ No
+3️⃣ What is a Primary Key?
+
+👉 A unique + NOT NULL identifier for each row in a table.
+
+4️⃣ What is a Foreign Key?
+
+👉 A key that references primary key of another table to maintain data integrity.
+
+5️⃣ What is NULL?
+
+👉 Represents missing or unknown value, not equal to 0 or empty string.
+
+6️⃣ What is WHERE clause?
+
+👉 Used to filter rows in a query.
+
+⚙️ INTERMEDIATE SQL QUESTIONS
+7️⃣ Difference between WHERE and HAVING?
+WHERE	HAVING
+Filters rows	Filters groups
+Used before GROUP BY	Used after GROUP BY
+8️⃣ What are Joins?
+
+👉 Used to combine rows from multiple tables.
+
+Types:
+
+INNER JOIN
+
+LEFT JOIN
+
+RIGHT JOIN
+
+FULL JOIN
+
+9️⃣ Difference between INNER JOIN and LEFT JOIN?
+
+INNER JOIN → Only matching rows
+
+LEFT JOIN → All rows from left + matching rows from right
+
+🔟 What is GROUP BY?
+
+👉 Groups rows with same values for aggregate functions.
+
+1️⃣1️⃣ What are Aggregate Functions?
+
+👉 Functions that operate on multiple rows:
+COUNT, SUM, AVG, MIN, MAX
+
+1️⃣2️⃣ What is Index?
+
+👉 Improves query performance but slows down INSERT/UPDATE.
+
+🚀 ADVANCED SQL INTERVIEW QUESTIONS
+1️⃣3️⃣ What is Normalization?
+
+👉 Process of reducing data redundancy.
+
+Normal Forms:
+
+1NF
+
+2NF
+
+3NF
+
+BCNF
+
+1️⃣4️⃣ What is Denormalization?
+
+👉 Combining tables to improve read performance.
+
+1️⃣5️⃣ What is ACID Property?
+
+👉 Ensures reliable transactions:
+
+Atomicity
+
+Consistency
+
+Isolation
+
+Durability
+
+1️⃣6️⃣ Difference between UNION and UNION ALL?
+
+UNION → Removes duplicates
+
+UNION ALL → Keeps duplicates (faster)
