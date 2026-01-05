@@ -1,0 +1,44 @@
+🔹 1. DDL (Data Definition Language)
+👉 Used to define / modify database structure
+CREATE DATABASE db_name;
+DROP DATABASE db_name;
+
+CREATE TABLE table_name (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT
+);
+
+DROP TABLE table_name;
+TRUNCATE TABLE table_name;
+ALTER TABLE table_name ADD column_name datatype;
+ALTER TABLE table_name DROP column_name;
+
+
+🔹 2. DML (Data Manipulation Language)
+👉 Used to insert, update, delete data
+INSERT INTO table_name VALUES (1, 'Rohit', 22);
+
+INSERT INTO table_name (id, name) VALUES (2, 'Amit');
+
+UPDATE table_name
+SET age = 23
+WHERE id = 1;
+
+DELETE FROM table_name WHERE id = 2;
+
+
+🔹 3. DQL (Data Query Language)
+👉 Used to fetch data
+SELECT * FROM table_name;
+
+SELECT name, age FROM table_name;
+
+SELECT * FROM table_name WHERE age > 20;
+
+SELECT DISTINCT age FROM table_name;
+
+SELECT * FROM table_name ORDER BY age DESC;
+
+SELECT * FROM table_name LIMIT 5;
+
